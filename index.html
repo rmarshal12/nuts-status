@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Nuts' Stock Pantry</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="nuts-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Nuts">
+<meta name="theme-color" content="#fff5d6">
+<style>
+  :root{--cream:#fff8e8;--brown:#56351d;--orange:#ad5623;--green:#4f8d54;
+         --card:#fffdf7;--line:#e8cfaa;--muted:#8a6c50;--red:#a8352c}
+  *{box-sizing:border-box}
+  body{margin:0;padding:18px 16px 44px;background:linear-gradient(#dff4ff,#fff5d6) fixed;
+       font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--brown);
+       -webkit-text-size-adjust:100%}
+  .mascot-frame{position:relative;border:3px solid #f2d09b;border-radius:26px;overflow:hidden;
+       box-shadow:0 14px 34px #79522435;background:#f5dfae;transform:rotate(-1deg);margin-bottom:22px}
+  .mascot-frame img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;
+       animation:breathe 3.2s ease-in-out infinite}
+  @keyframes breathe{50%{transform:scale(1.018)}}
+  @media (prefers-reduced-motion:reduce){.mascot-frame img{animation:none}}
+  .mascot-frame .badge{position:absolute;left:12px;bottom:12px;background:#fffdf0e8;
+       border:1px solid #e0bd84;border-radius:999px;padding:6px 12px;font-size:.72rem;
+       font-weight:800;letter-spacing:.4px;color:#75431f;backdrop-filter:blur(4px)}
+  .mascot-frame .badge.live{background:#fff0d1f2;color:#8a4b13}
+  h1{font-size:1.9rem;margin:0 0 2px;color:var(--orange);letter-spacing:-.4px}
+  .said{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:14px 16px;
+       font-size:1.02rem;box-shadow:0 8px 25px #79522418;margin:0 0 18px}
+  .banner{background:#fdeceb;border:2px solid #f0c9c5;color:var(--red);border-radius:18px;
+       padding:13px 15px;font-weight:700;font-size:.95rem;margin:0 0 18px}
+  .total{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px 20px;
+       box-shadow:0 8px 25px #79522418;margin-bottom:12px}
+  .total .k{font-size:.72rem;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted)}
+  .total .v{font-size:2.9rem;font-weight:800;color:var(--green);letter-spacing:-1.5px;margin-top:2px;
+       font-variant-numeric:tabular-nums}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:6px}
+  .card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:13px 15px;
+       box-shadow:0 8px 25px #79522418}
+  .card .k{font-size:.68rem;letter-spacing:1.1px;text-transform:uppercase;color:var(--muted)}
+  .card .v{font-size:1.35rem;font-weight:800;margin-top:3px;font-variant-numeric:tabular-nums}
+  .up{color:var(--green)} .down{color:var(--red)}
+  h2{font-size:.74rem;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted);
+       margin:26px 0 9px;font-weight:800}
+  ul{list-style:none;margin:0;padding:0}
+  li{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:13px 15px;
+       margin-bottom:9px;box-shadow:0 8px 25px #79522414}
+  li.empty{color:var(--muted);font-size:.92rem;font-style:italic}
+  .sym{font-weight:800;font-size:1.08rem}
+  .num{font-size:.85rem;color:var(--muted);margin-top:2px;font-variant-numeric:tabular-nums}
+  .stop-at{font-size:.85rem;color:var(--green);margin-top:4px;font-weight:700}
+  .stop-at.warn{color:var(--red)}
+  #watch li{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:.93rem}
+  .muted{color:var(--muted);text-align:right;font-size:.85rem}
+  footer{margin-top:26px;font-size:.8rem;color:var(--muted);line-height:1.65;
+       border-top:2px solid var(--line);padding-top:15px}
+  #age{font-weight:800;color:var(--brown)}
+  .stale{color:#a06a1e} .old{color:var(--red)}
+</style></head><body>
+<div class="mascot-frame">
+  <img src="nuts-trader-760.jpg" alt="Nuts, a squirrel stock trader in a navy vest and headset, holding an acorn beside his market screens">
+  <span class="badge live">LIVE</span>
+</div>
+<h1>Nuts' Stock Pantry</h1>
+<p class="said">🐿️ Resting between sessions. Nothing held right now.</p>
+
+<div class="total"><div class="k">Total value</div><div class="v">$14.56</div></div>
+<div class="grid">
+  <div class="card"><div class="k">Cash</div><div class="v">$14.56</div></div>
+  <div class="card"><div class="k">Today</div>
+    <div class="v ">$0.00</div></div>
+  <div class="card"><div class="k">All time</div>
+    <div class="v ">$0.00</div></div>
+  <div class="card"><div class="k">Trades</div><div class="v">0</div></div>
+</div>
+<h2>In the pantry</h2>
+<ul><li class="empty">Pantry is empty. Nothing held right now.</li></ul>
+<h2>Watching</h2>
+<ul id="watch"><li class="empty">No watchlist prices yet.</li></ul>
+<footer>
+  Updated <span id="age">just now</span>.<br>
+  This page only reports. It cannot buy, sell, start or stop anything.
+</footer>
+<script>
+  var made = new Date("2026-08-09T00:54:44.165700+00:00");
+  function tick() {
+    var mins = Math.floor((Date.now() - made.getTime()) / 60000), el = document.getElementById("age");
+    el.textContent = mins < 1 ? "just now" : mins < 60 ? mins + " min ago"
+      : mins < 1440 ? Math.floor(mins / 60) + " hr ago" : Math.floor(mins / 1440) + " days ago";
+    el.className = mins > 1440 ? "old" : mins > 60 ? "stale" : "";
+  }
+  tick(); setInterval(tick, 30000);
+</script>
+</body></html>
